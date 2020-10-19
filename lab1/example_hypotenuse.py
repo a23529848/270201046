@@ -1,3 +1,3 @@
-a=3
-b=4
-print((a**2+b**2)**0.5)
+edge_a=3
+edge_b=4
+print((edge_a**2 + edge_b**2 ) ** 0.5)
