@@ -1,27 +1,27 @@
-theTime=float(input("Please Enter Current Time="))
-theMinuteOfTime=theTime-int(theTime)
+##Current Time
 
-the_minute=theMinuteOfTime*100
+currentHour=6
+currentMinute=52
+easyPaceMinute=8
+tempoMinute=6
 
-the_Minute=int(the_minute)+1
+##Distance
 
-print(the_Minute)
+easyMiles=1+2
+tempoMiles=3
 
-speedEasyPace=1/8
-speedTempo=1/6
+#total Time (seconds)
 
-totalRunTime= 1/speedEasyPace + 3/speedTempo + 2/speedEasyPace ##minute
+runTime=easyPaceMinute*easyMiles*60 + tempoMinute*tempoMiles*60
+##converts hour and minute to seconds
+currentTime=currentHour*3600 + currentMinute*60
+totalTime=currentTime+runTime
+##converts from seconds to last time
+totalHour=totalTime/3600
+totalMinutes = (totalTime % 3600) / 60
 
-print(totalRunTime)
-
-totalTime=totalRunTime+the_Minute
-
-print(totalTime)
-
-realTotalTime=int(totalTime)+1
+newTime = int(totalHour),":",totalMinutes
+##
+print(newTime)
 
 
-
-HomeTime=((int(theTime)+1)+(realTotalTime%60)/100)-0.01
-
-print(HomeTime)
