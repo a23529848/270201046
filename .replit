@@ -1,2 +1,2 @@
 language = "python3"
-run = "python outofclass/lecture_asenkron1.py"
+run = "python lab2/example1.py"
