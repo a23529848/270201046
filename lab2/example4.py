@@ -1,5 +1,5 @@
-month=float(input("Please Enter Which Month Want You Book"))
-day=int(input("Please Enter Which Day Want You Book"))
+month=float(input("Please Enter Which Month Want You Book:"))
+day=int(input("Please Enter Which Day Want You Book:"))
 month_day=month+day/100 
 
 if 3.20<=month_day<6.20 :
