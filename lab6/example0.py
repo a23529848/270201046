@@ -1,7 +1,12 @@
-game_of_thrones=[("Jon",15), ("Ned",45), ("Arya",9), ("Catelyn",44), ("Bran",10)]
-
-
-for i in game_of_thrones:
-  if i[1]>18:
-    print(i[0])
+hnames=int(input("How many people:"))
+n_list=[]
+n1=""
+for _ in range(hnames):
+    name=input("Name:")
+    age=int(input("Age:"))
+    tuple1=(name,age)
+    if age>18:
+        n1=n1+name+"\n"
+    n_list.append(tuple1)
+print(n1)
 

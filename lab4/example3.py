@@ -8,6 +8,7 @@ while number1>0 and number2>0:
     matches=matches+1
   number1=number2//10
   number2=number1//10
-
+  print(number1)
+  print(number2)
 
 print(matches)
