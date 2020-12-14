@@ -5,4 +5,13 @@ def is_prime(number):
       return False
     else:
       return True
-print(is_prime(7))
+print(is_prime(21))
+
+def between(a,b):
+  for n in range(a,b):
+    if is_prime(n)==True:
+      print(n)
+x=int(input("Primes from:"))
+y=int(input("to:"))
+between(x,y)
+
