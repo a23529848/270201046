@@ -10,8 +10,6 @@ for _ in range(1,4):
    listst.append(list1)
    n1=e1*0.3+e2*0.3+fn*0.4
    print(n1)
-   if n1>60:
-       print("Passed")
-   else:
-        print("No Pass")
+   if n1>90:
+       print("AA")
 print(listst)
