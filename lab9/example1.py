@@ -13,3 +13,15 @@ print(x)
 
 # Recursive One
 
+def FlipList(my_list):
+    takeAList=[]
+    if len(my_list) == 1:
+        takeAList.append(my_list[0])
+        return takeAList
+    else:
+        takeAList.append(my_list[-1])
+        return takeAList + FlipList(my_list[:-1])
+
+arr1=[2,3,4,5,6]
+
+print(FlipList(arr1))
