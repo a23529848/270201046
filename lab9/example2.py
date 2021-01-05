@@ -1,15 +1,17 @@
-my_list=[1,2,3,7,9,8]
 
-def iterative_even(my_list):
-  x=1
-  counter=0
-  for number in range(3,len(my_list)+1):
-    if my_list[x]%(number)!=0:
-      counter=counter+1
-    x=x+1
-  return counter
 
-print(iterative_even(my_list))
+my_list = [0, 1, 2, 3, 4, 5]
 
-# I will study for the recursion and solve them in a proper way
-    
+
+def even_number_counter(my_list):
+    if len(my_list)==0:
+        return 0
+
+    if my_list[0] % 2==0:
+        counter = 1
+        return even_number_counter(my_list[1:])+counter
+    else:
+        counter=0
+        return even_number_counter(my_list[1:])+counter
+
+print(even_number_counter(my_list))
