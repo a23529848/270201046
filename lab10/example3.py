@@ -1,5 +1,5 @@
 
-# with a
+# with all steps of triangle
 
 def rec_pascal(n):
     if n == 1:
