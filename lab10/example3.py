@@ -1,19 +1,24 @@
-def pascal_tri(n):
-    if n == 0:
-        return []
-    elif n == 1:
+
+# with a
+
+def rec_pascal(n):
+    if n == 1:
+        print([1])
         return [1]
     else:
-        row = [1]
-        last_row = pascal_tri(n - 1)
+        array = rec_pascal(n - 1)
+        counter = 0
+        counter_k = 1
+        sum_list = []
+        sum_list.append(array[0])
+        sum_list.append(array[-1])
 
-        for i in range(len(last_row) - 1):
-            row.append(last_row[i] + last_row[i + 1])
-            
-        row += [1]
+        while len(array) >= len(sum_list):
+            case = array[counter] + array[counter_k]
+            sum_list.insert(1, case)
+            counter = counter + 1
+            counter_k = counter_k + 1
+        print(sum_list)
+        return sum_list
 
-    return row
-
-
-print(pascal_tri(4)) # 4. step
-
+rec_pascal(4)
