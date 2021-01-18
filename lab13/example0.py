@@ -9,5 +9,5 @@ def rec_selection(list):
 
 
 
-liste=[4,6,3,5,1]
+liste=[43,342,343,2,34]
 print(rec_selection(liste))
